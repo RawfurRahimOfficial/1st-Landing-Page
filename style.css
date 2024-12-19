@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Gilroy";
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.mainLeft{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    background-color: #dce9ea;
+}
+.lTextCenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.lTextCenter h1 {
+    font-size: 90px;
+    font-weight: 900;
+    color: #303030;
+}
+.lTextCenter p {
+    opacity: .7;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    width: 350px;
+
+}
+.lTextCenter a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #303030;
+    border-bottom: 1px solid rgb(124, 118, 118);
+    padding-bottom:8px;
+    
+}
+
+
+.mainRight{
+    width: 60%;
+    height: 100%;
+
+}
+
+
+.rTop{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    
+}
+.rTopleft{
+    width: 50%;
+    height: 100%;
+    background-image: url(3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.rTopRight{
+    width: 50%;
+    height: 100%;
+    background-image: url(2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.rBottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.lNav{
+    display: flex;
+    align-items: center;
+}
+.lNavLeft{
+    padding: 20px 0px 0px 30px;
+    
+}
+
+.lNavRight{
+    padding: 20px 0px 0px 20px;
+    font-size: 20px;
+    padding-left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+
+.lNavRight a{
+    text-decoration: none;
+    margin-right: 30px;
+    justify-content: right;
+    color: black;
+    font-weight: 600;
+}
+
+.lNavRight i{
+    margin-right: 0px;
+}
+.lNavRight i:hover{
+    color: rgb(255, 0, 0);
+    transition: .40s;
+}
+
+@media(max-width:770px){
+    .main{
+        flex-direction: column;
+    }
+    .main .mainLeft{
+        width: 100%;
+    }
+    .main .mainRight{
+        width: 100%;
+        
+    }
+    .main .lNav{
+        width: 100%;
+    }
+}
